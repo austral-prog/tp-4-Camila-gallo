@@ -1,5 +1,5 @@
+import math
 def line():
-    import math
     a= float(input("Ingrese el coeficiente A:"))
     b= float(input("Ingrese el coeficiente B:"))
     x1= float(input("Ingrese el coeficiente X1:"))
@@ -10,13 +10,12 @@ def line():
     print(f"El coeficiente X2 de su ecuación de la recta es: {x2}" )
     print("")
     Y1= a*x1+b
-    Y2= a*x2+b 
+    Y2= a*x2+b
     print("Para la siguiente ecuación:")
-    print(f"\tY = {a}X + {b}") 
+    print(f"\tY = {a}X + {float(b)}") 
     print("")
     print("Dados los siguientes puntos:")
-    print(f"\tP1 ({x1}, {Y1})")
-    print(f"\tP2 ({x2}, {Y2})")
+    print(f"\tP1 ({float(x1)}, {float(Y1)}\n\tP2 ({float(x2)}, {float(Y2)})")
     distancia = math.sqrt((x2 - x1)**2 + (Y2 - Y1)**2)
     print("")
     print(f"La distancia entre ellos es: {distancia}")
